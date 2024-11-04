@@ -4,6 +4,10 @@ const cors = require("cors");
 
 const app = express();
 app.use(cors());
+
+app.use(cors({
+  origin: 'https://rma-frontend.onrender.com',
+}));
 app.use(express.json());
 const port= process.env.PORT || 5000
 
