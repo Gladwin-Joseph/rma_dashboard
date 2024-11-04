@@ -70,7 +70,7 @@ const Cards = () => {
       useEffect(() => {
         const fetchNotificationCounts = async () => {
           try {
-            const response = await axios.get('http://localhost:5000/api/rpmoscounts');
+            const response = await axios.get('https://rma-backend-vhsq.onrender.com/api/rpmoscounts');
             const data = response.data[0]; 
             setRpmosCounts({
                 totalCreated: data.Total_Rpmos_Created,
@@ -88,7 +88,7 @@ const Cards = () => {
       useEffect(() => {
         const fetchSrpmosCounts = async () => {
           try {
-            const response = await axios.get('http://localhost:5000/api/srpmoscounts');
+            const response = await axios.get('https://rma-backend-vhsq.onrender.com/api/srpmoscounts');
             const data = response.data; 
             setSRpmosCounts({
                 totalCreated: data.Total_SRPMOS_Created,
@@ -107,7 +107,7 @@ const Cards = () => {
       useEffect(() => {
         const fetchRegicCounts = async () => {
           try {
-            const response = await axios.get('http://localhost:5000/api/regiccounts');
+            const response = await axios.get('https://rma-backend-vhsq.onrender.com/api/regiccounts');
             const data = response.data; 
             setRegicCounts({
                 totalCreated: data.Total_REGIC_Created,
@@ -125,7 +125,7 @@ const Cards = () => {
       useEffect(() => {
         const fetchSRegicCounts = async () => {
           try {
-            const response = await axios.get('http://localhost:5000/api/sregiccounts');
+            const response = await axios.get('https://rma-backend-vhsq.onrender.com/api/sregiccounts');
             const data = response.data; 
             setSregicCounts({
                 totalCreated: data.Total_SREGIC_Created,
@@ -143,7 +143,7 @@ const Cards = () => {
       useEffect(() => {
         const fetchRep2psCounts = async () => {
           try {
-            const response = await axios.get('http://localhost:5000/api/rep2pscounts');
+            const response = await axios.get('https://rma-backend-vhsq.onrender.com/api/rep2pscounts');
             const data = response.data; 
             setRep2psCounts({
                 totalCreated: data.Total_REP2PS_Created,
@@ -161,7 +161,7 @@ const Cards = () => {
       useEffect(() => {
         const fetchRpsrCounts = async () => {
           try {
-            const response = await axios.get('http://localhost:5000/api/rpsrcounts');
+            const response = await axios.get('https://rma-backend-vhsq.onrender.com/api/rpsrcounts');
             const data = response.data; 
             setRpsrCounts({
                 totalCreated: data.Total_RPSR_Created,
@@ -179,7 +179,7 @@ const Cards = () => {
       useEffect(() => {
         const fetchRep2ppCounts = async () => {
           try {
-            const response = await axios.get('http://localhost:5000/api/rep2ppcounts');
+            const response = await axios.get('https://rma-backend-vhsq.onrender.com/api/rep2ppcounts');
             const data = response.data; 
             setRep2ppCounts({
                 totalCreated: data.Total_REP2PP_Created,
